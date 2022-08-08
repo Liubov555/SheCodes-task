@@ -11,7 +11,8 @@ body {
     font-family: var(--defolt-font-family);
 }
 
-h1 {
+h1,
+.about__title {
     color: var(--text-heading-color);
     font-family: var(--heading-font-family);
     font-size: 96px;
@@ -21,8 +22,15 @@ h1 {
     margin-bottom: 24px;
 }
 
+.about__title {
+    font-size: 64px;
+    line-height: 85px;
+}
+
 @media (max-width: 900px) {
-    h1 {
+
+    h1,
+    .about__title {
         font-size: 44px;
         line-height: 2;
     }
@@ -67,7 +75,7 @@ img {
     margin-bottom: 67px;
 }
 
-.hero__btn {
+.btn__branding {
     text-decoration: none;
     color: #FFFFFF;
     background-color: var(--branding-color);
@@ -106,7 +114,8 @@ img {
     }
 }
 
-.projects__description {
+.projects__description,
+.about__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -139,7 +148,7 @@ img {
 }
 
 /*Buttons*/
-.hero__btn,
+.btn__branding,
 .projects__btn {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease 0s;
@@ -147,11 +156,37 @@ img {
 
 }
 
-.hero__btn:hover,
+.btn__branding:hover,
 .projects__btn:hover {
     background-color: #e96d4c;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
     border: none;
+}
+
+/*About page*/
+.about__block {
+    padding: 160px 20px;
+}
+
+@media (max-width: 900px) {
+
+    .about__block {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.about__subtitle {
+    font-family: var(--defolt-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--text-color);
+    margin-bottom: 28px;
+}
+
+.about__img {
+    border-radius: 20px;
 }
