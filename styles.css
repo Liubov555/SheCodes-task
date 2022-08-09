@@ -1,5 +1,6 @@
 :root {
     --branding-color: #5f9ea0;
+    --accent-color: #e96d4c;
     --secondary-color: #F9F7FE;
     --text-heading-color: #000000;
     --text-color: #272142;
@@ -41,6 +42,8 @@ h3 {
         font-size: 44px;
         line-height: 2;
     }
+
+
 }
 
 p {
@@ -65,6 +68,8 @@ img {
     .hero {
         padding: 80px 20px;
     }
+
+
 }
 
 .hero p {
@@ -93,11 +98,38 @@ img {
 }
 
 /*Projects section*/
-/*
-.projects {
-    padding: 127px 213px 132px 67px;
+nav {
+    padding: 20px 0;
 }
-*/
+
+.logo {
+    max-width: 150px;
+    max-height: 35px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-heading-color);
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--accent-color);
+    transition: all 100ms ease;
+}
 
 .projects__text {
     font-size: 18px;
@@ -118,6 +150,10 @@ img {
     h2,
     .projects__title {
         font-size: 44px;
+    }
+
+    nav {
+        padding: 10 0;
     }
 }
 
@@ -165,7 +201,7 @@ img {
 
 .btn__branding:hover,
 .projects__btn:hover {
-    background-color: #e96d4c;
+    background-color: var(--accent-color);
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
