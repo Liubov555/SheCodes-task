@@ -12,7 +12,7 @@ body {
 }
 
 h1,
-.about__title {
+.section-title {
     color: var(--text-heading-color);
     font-family: var(--heading-font-family);
     font-size: 96px;
@@ -22,7 +22,14 @@ h1,
     margin-bottom: 24px;
 }
 
-.about__title {
+h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: var(--defolt-font-family);
+}
+
+.section-title {
     font-size: 64px;
     line-height: 85px;
 }
@@ -30,7 +37,7 @@ h1,
 @media (max-width: 900px) {
 
     h1,
-    .about__title {
+    .section-title {
         font-size: 44px;
         line-height: 2;
     }
@@ -39,6 +46,7 @@ h1,
 p {
     color: var(--text-color);
     font-family: var(--defolt-font-family);
+    font-weight: 400;
 }
 
 img {
@@ -92,7 +100,6 @@ img {
 */
 
 .projects__text {
-    font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -166,13 +173,13 @@ img {
 }
 
 /*About page*/
-.about__block {
+.content-container {
     padding: 160px 20px;
 }
 
 @media (max-width: 900px) {
 
-    .about__block {
+    .content-container {
         text-align: center;
         padding: 0;
     }
@@ -189,4 +196,11 @@ img {
 
 .about__img {
     border-radius: 20px;
+}
+
+/*Work page*/
+.work__subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(39, 33, 66, 0.7);
 }
