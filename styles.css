@@ -43,9 +43,6 @@ h3 {
     line-height: 85px;
 }
 
-h4 {
-    font-size: 48px;
-}
 
 p {
     color: var(--text-color);
@@ -61,7 +58,7 @@ img {
 /*Hero section*/
 .hero {
     text-align: center;
-    padding: 160px 20px 270px 20px;
+    padding: 60px 20px;
     background: var(--secondary-color);
 }
 
@@ -196,6 +193,11 @@ footer .contact-box p {
     margin: 0;
 }
 
+footer .contact-box h3 {
+    font-family: var(--heading-font-family);
+    font-size: 48px;
+}
+
 footer .email-link {
     text-decoration: none;
     color: black;
@@ -223,9 +225,18 @@ footer .social-links a:focus {
     color: #fff;
 }
 
+.footer-link {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
 /*About page*/
 .content-container {
-    padding: 160px 20px;
+    padding: 60px 20px;
 }
 
 .about__subtitle {
@@ -254,10 +265,6 @@ footer .social-links a:focus {
     .section-title {
         font-size: 44px;
         line-height: 2;
-    }
-
-    .hero {
-        padding: 80px 20px;
     }
 
     h2,
